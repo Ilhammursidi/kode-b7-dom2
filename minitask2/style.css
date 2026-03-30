@@ -1,0 +1,45 @@
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;  
+    gap: 20px;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+
+@media screen and (max-width:768px) {
+    nav {
+        display : none;
+    }
+
+    .dropdown-content {
+        display : none;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .dropdown-content a{
+        text-decoration: none;
+    }
+
+    .dropdown-toggle {
+        display: flex;
+    }
+
+    .hidden {
+        display:flex;
+    }
+
+}
